@@ -1,0 +1,75 @@
+
+/* =========================================================================== */
+/* Input */
+.customTextareaWrapper {
+    width: 100%;
+    margin-right: 40px;
+    position: relative;
+}
+.customTextarea{
+    outline: none;
+    font-size:16px;
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left:16px;
+    padding-right:16px;
+    border-bottom-width:0px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-top-width:0px;
+    resize:none;
+    width:100%;
+    background-color:rgba(0,0,0,0.05)
+  }
+  .customTextarea.active{
+    outline: none;
+    font-size:16px;
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left:16px;
+    padding-right:16px;
+    border-bottom-width:0px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-top-width:0px;
+    resize:none;
+    width:100%;
+    background-color:rgba(0,0,0,0.1);
+  }
+  .customTextareaDefaultBottomBorder{ 
+    position:absolute;
+    padding-left:16px;
+    padding-right:16px;
+    bottom:0px;
+    left:0px;
+    height:2px;
+    background-color:rgba(0,0,0,0.1);
+    width:100%;
+    transition:0.2s all linear;
+  }
+  .customTextareaBottomBorder{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    height:2px;
+    background-color:rgba(0,0,0,0.1);
+    transform: translateX(-50%);
+    left:50%;
+    transition:0.2s all linear;
+  }
+  .customTextareaBottomBorder.active{
+    position:absolute;
+    padding-left:16px;
+    padding-right:16px;
+    bottom:0px;
+    height:2px;
+    background-color:rgb(103, 58, 183);
+    animation-duration: .3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: underline;
+  }
+  @keyframes underline {
+    0% {width:0}
+    100% {width:100%}
+}

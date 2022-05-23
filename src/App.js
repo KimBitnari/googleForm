@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const onClick = (good) => {
+    return good.map(x => x * 2)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -11,9 +15,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={e => onClick()}
         >
           Learn React
         </a>

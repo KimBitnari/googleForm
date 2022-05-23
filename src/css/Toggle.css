@@ -1,0 +1,52 @@
+
+.toggleContainer{
+  cursor:pointer;
+  position:relative;
+  height:20px;
+  width:30px;
+}
+
+.toggleContainer.active{
+  position:relative;
+}
+
+.toggleBar{
+  border-color: #b9b9b9;;
+  border: 7px solid #b9b9b9;;
+  border-radius:7px;
+  position:absolute;
+  top: 3px;
+  width:28px;
+}
+.toggleBar.active {
+    border-color: rgb(225, 216, 241);
+    border: 7px solid rgb(225,216,241);
+  }
+
+.toggleCircle{
+  border-color: rgb(103, 58, 183);
+  color: rgba(255,255,255,1);
+  border:10px solid #fafafa;
+  transition: border-color 0.3s linear;
+  position: absolute;
+  border-radius:100%;
+  box-shadow: 0 1px 3px rgba(0 0 0 /40%);
+}
+
+.toggleCircle.active {
+  border-color: rgb(103, 58, 183);
+  border:10px solid rgb(103,58,183);
+  position: absolute;
+  border-radius:100%;
+  box-shadow: 0 1px 3px rgba(0 0 0 /40%);
+}
+
+.toggleCircleWrapper {
+  cursor:pointer;
+  transition: 0.2s all linear;
+  transform: translate(-7px)
+}
+
+.toggleCircleWrapper.active{
+  transform: translate(17px);
+}
